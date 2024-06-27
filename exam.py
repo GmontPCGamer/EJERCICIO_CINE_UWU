@@ -1,6 +1,3 @@
-import os
-import msvcrt
-import csv
 from fun import *
 
 while True:
@@ -11,7 +8,13 @@ while True:
     print("3) mostrar ventas realizadas")
     print("4) Generar archivo CSV")
     print("5) salir.")
-    opc = int(input("seleccione opcion en pantalla: "))
+    while True:
+        try:
+            opc = int(input("seleccione opcion en pantalla: "))
+        except:
+            print('ERROR DEBE SER UN NUMERO ENTERO')
+        if opc in range(1,6):
+            break
     os.system('cls')
     if opc == 1:
        opc_1()
@@ -20,6 +23,6 @@ while True:
     elif opc == 3:
         opc_3()
     elif opc == 4: 
-        with open
+        opc_4()
     else:
         break                               
