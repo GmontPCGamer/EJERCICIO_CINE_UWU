@@ -20,6 +20,6 @@ while True:
     elif opc == 3:
         opc_3()
     elif opc == 4: 
-        pass
+        with open
     else:
         break                               
